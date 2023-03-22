@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+.container .left {
+  width: 50%;
+  background-color: #3E54AC;
+}
+.container .left .text {
+  margin-top: 40%;
+  text-align: center;
+  font-size: 150px;
+  color: #655DBB;
+}
+.container .rigth {
+  width: 50%;
+  background-color: #655DBB;
+}
+.container .rigth .text {
+  margin-top: 40%;
+  text-align: center;
+  font-size: 150px;
+  color: #3E54AC;
+}/*# sourceMappingURL=style.css.map */

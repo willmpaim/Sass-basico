@@ -1,0 +1,37 @@
+$main-color: #3E54AC;
+$secondary-color: #655DBB;
+
+//mixin são funcões dentro do Sass onde podemos até mesmo colocar parâmetros.
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin color-text($background-color, $text-color) {
+    width: 50%;
+    background-color: $background-color;
+    .text {
+        margin-top: 40%;
+        text-align: center;
+        font-size: 150px;
+        color: $text-color;
+    }
+}
+
+//include é a forma com que chamamos a função sass.
+body {
+     @include reset;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+
+    .left {
+        @include color-text($main-color, $secondary-color);
+    }
+
+    .rigth {
+        @include color-text($secondary-color, $main-color);
+    }
+}
